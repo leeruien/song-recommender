@@ -1,0 +1,104 @@
+.home {
+    height: 100vh;
+    padding: 40px 20px;
+    background: #f0f4f8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('C:\Users\user\OneDrive - Nanyang Technological University\Desktop\project\full-sleep-app\client\sleep-predictor-app\public\images\Gray Minimalist Wedding Background Wallpaper Image For Free Download - Pngtree.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+
+.welcome-title {
+    font-family: 'Arial', sans-serif;
+    font-weight: bolder;
+}
+
+.content-container {
+    display:flex;
+    gap:40px;
+    max-width: 1200px;
+    margin:0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    padding-bottom: 80px;
+}
+
+.features-container {
+    flex:2;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.card {
+    background: rgb(248, 244, 244);
+    padding: 30px 40px;
+    width: 400px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: #222;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.funfacts-container {
+    flex: 1;
+    background: rgb(248, 244, 244);
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 200px;
+    max-width: 350px;
+}
+
+.funfacts-container p {
+    font-size: 1rem;
+    line-height: 1.4;
+    min-height: 80px;
+}
+
+.next-fact-button {
+  background: #61a7f7;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .content-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features-section, .funfacts {
+    width: 100%;
+  }
+}
